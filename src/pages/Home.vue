@@ -133,7 +133,7 @@
               </div>
             </ui-button>
             <div class="rounded-[0.8rem]"></div>
-            <ui-button buttonClass="py-2 px-2 ml-3" rounded="rounded-[0.8rem]" variant="" @click="isDark = !isDark">
+            <ui-button buttonClass="py-2 px-2 ml-3" rounded="rounded-[0.8rem]" variant="" @click="toggleDark()">
               <svg v-if="isDark" viewBox=" 0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round" class="w-7 h-7">
                 <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-transparent stroke-white"></path>
@@ -203,7 +203,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { onBeforeMount, ref } from 'vue'
 import {
   Dialog,
   DialogPanel,
@@ -230,8 +230,8 @@ import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
 import { useGroupTooltip } from '@/composable/groupTooltip';
 import { useDark, useToggle } from '@vueuse/core';
 
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
+let isDark = useDark();
+let toggleDark = useToggle(isDark);
 
 useGroupTooltip()
 
