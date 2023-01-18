@@ -5,9 +5,7 @@ import createTippy, { defaultOptions } from "@/lib/tippy";
 export const useGroupTooltip = (elements?: any, options = {}) => {
   const singleton = shallowRef<any>(null);
   const instance = getCurrentInstance();
-  console.log(instance);
-  const context: any = instance && instance.exposed;
-
+  const context: any = instance && (instance.exposed || (instance as any).ctx);
   nextTick(() => {
     let tippyInstances = [];
 
