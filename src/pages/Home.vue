@@ -109,7 +109,7 @@
           <Bars3BottomLeftIcon class="h-6 w-6" aria-hidden="true" />
         </button>
         <div class="flex w-full justify-between items-center max-w-8xl px-6 sm:px-8 md:px-10 py-10">
-          <div class="flex w-full max-w-6xl" action="#" method="GET">
+          <div class="flex w-full" action="#" method="GET">
             <div class="relative w-full flex items-center">
               <ui-input placeholder="Search" class="w-full mr-3" rounded="rounded-[0.8rem]"
                 inputClass="w-full py-4 px-6">
