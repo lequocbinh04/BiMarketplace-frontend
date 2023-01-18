@@ -108,7 +108,7 @@
           <span class="sr-only">Open sidebar</span>
           <Bars3BottomLeftIcon class="h-6 w-6" aria-hidden="true" />
         </button>
-        <div class="flex w-full justify-between items-center max-w-7xl px-6 sm:px-8 md:px-10 py-10">
+        <div class="flex w-full justify-between items-center max-w-[120rem] mx-auto px-6 sm:px-8 md:px-10 py-10">
           <div class="flex w-full" action="#" method="GET">
             <div class="relative w-full flex items-center">
               <ui-input placeholder="Search" class="w-full mr-3" rounded="rounded-[0.8rem]"
@@ -186,10 +186,10 @@
 
       <main class="flex-1">
         <div class="py-6">
-          <div class="mx-auto max-w-7xl px-6 sm:px-8 md:px-10">
+          <div class="mx-auto max-w-[120rem] mx-auto px-6 sm:px-8 md:px-10">
             <h1 class="text-2xl font-semibold text-gray-900 dark:text-white duration-200">Dashboard</h1>
           </div>
-          <div class="mx-auto max-w-7xl px-6 sm:px-8 md:px-10">
+          <div class="mx-auto max-w-[120rem] mx-auto px-6 sm:px-8 md:px-10">
             <!-- Replace with your content -->
             <div class="py-4">
               <div class="h-96 rounded-lg border-4 border-dashed border-gray-200 dark:border-gray-500 duration-200" />
