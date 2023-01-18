@@ -24,16 +24,10 @@ defineProps({
     }
 })
 
-onMounted(() => {
-    console.log(indicator.value);
-})
-
-console.log(indicator.value);
 const hoverHandler = ({ target }: {
     target: HTMLElement
 }) => {
     const { left, top, width, height } = target.getBoundingClientRect()
-    console.log(target);
     if (instances.length == 0 && indicator.value) {
         indicator.value.style.width = `${width}px`
         indicator.value.style.height = `${height}px`;
