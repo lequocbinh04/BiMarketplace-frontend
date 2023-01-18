@@ -101,30 +101,31 @@
       </div>
     </div>
     <div class="flex flex-1 flex-col md:pl-72">
-      <div class="sticky top-0 z-10 flex h-16 flex-shrink-0 bg-white">
+      <div class="sticky top-0 z-10 flex h-16 flex-shrink-0">
         <button type="button"
           class="border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 md:hidden"
           @click="sidebarOpen = true">
           <span class="sr-only">Open sidebar</span>
           <Bars3BottomLeftIcon class="h-6 w-6" aria-hidden="true" />
         </button>
-        <div class="flex flex-1 justify-between px-4">
-          <div class="flex flex-1">
-            <form class="flex w-full md:ml-0" action="#" method="GET">
-              <label for="search-field" class="sr-only">Search</label>
-              <div class="relative w-full text-gray-400 focus-within:text-gray-600">
-                <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center">
-                  <MagnifyingGlassIcon class="h-5 w-5" aria-hidden="true" />
-                </div>
-                <input id="search-field"
-                  class="block h-full w-full border-transparent py-2 pl-8 pr-3 text-gray-900 placeholder-gray-500 focus:border-transparent focus:placeholder-gray-400 focus:outline-none focus:ring-0 sm:text-sm"
-                  placeholder="Search" type="search" name="search" />
+        <div class="flex flex-1 justify-between items-center max-w-8xl px-6 sm:px-8 md:px-10 py-10">
+          <div class="flex w-full" action="#" method="GET">
+            <div class="relative w-full flex items-center">
+              <ui-input placeholder="Search" class="w-full mr-3" inputClass="w-full py-4 px-6 rounded-[0.8rem]">
+                <template #prepend>
+                  <MagnifyingGlassIcon class="w-6" />
+                </template>
+              </ui-input>
+              <div class="h-full">
+                <ui-button buttonClass="py-4 px-4 rounded-[0.8rem]" variant="accent">
+                  <FunnelIcon class="h-5 w-auto" />
+                </ui-button>
               </div>
-            </form>
+            </div>
           </div>
-          <div class="ml-4 flex items-center md:ml-6">
+          <div class=" ml-4 flex items-center md:ml-6">
             <button type="button"
-              class="rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+              class="rounded-full p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
               <span class="sr-only">View notifications</span>
               <BellIcon class="h-6 w-6" aria-hidden="true" />
             </button>
@@ -148,7 +149,9 @@
                   class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                   <MenuItem v-for="item in userNavigation" :key="item.name" v-slot="{ active }">
                   <a :href="item.href"
-                    :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">{{ item.name }}</a>
+                    :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">{{
+  item.name
+                    }}</a>
                   </MenuItem>
                 </MenuItems>
               </transition>
@@ -159,10 +162,10 @@
 
       <main class="flex-1">
         <div class="py-6">
-          <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
+          <div class="mx-auto max-w-8xl px-6 sm:px-8 md:px-10">
             <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
           </div>
-          <div class="mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
+          <div class="mx-auto max-w-8xl px-6 sm:px-8 md:px-10">
             <!-- Replace with your content -->
             <div class="py-4">
               <div class="h-96 rounded-lg border-4 border-dashed border-gray-200" />
@@ -196,7 +199,8 @@ import {
   XMarkIcon,
   LifebuoyIcon,
   AcademicCapIcon,
-  ArrowSmallRightIcon
+  ArrowSmallRightIcon,
+  FunnelIcon
 } from '@heroicons/vue/24/outline'
 import { MagnifyingGlassIcon } from '@heroicons/vue/20/solid'
 import { useGroupTooltip } from '@/composable/groupTooltip';
