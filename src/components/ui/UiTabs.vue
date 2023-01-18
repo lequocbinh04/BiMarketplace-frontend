@@ -3,8 +3,8 @@
         <div class="relative z-20" :class="class">
             <slot></slot>
         </div>
-        <div id="ui-indicator" ref="indicator" class="bg-black/5 rounded-xl absolute z-10 duration-200"
-            v-show="showIndicator">
+        <div id="ui-indicator" ref="indicator"
+            class="bg-black/5 dark:bg-[rgb(63,63,70)] rounded-xl absolute z-10 duration-200" v-show="showIndicator">
         </div>
     </div>
 </template>

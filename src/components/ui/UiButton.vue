@@ -1,6 +1,7 @@
 <template>
-  <button class="px-4 py-2 rounded-lg duration-200 " :class="[
+  <button class="px-4 py-2 duration-200 flex items-center justify-center" :class="[
     buttonClass,
+    rounded,
     // @ts-ignore
     variants[btnType][variant]
   ]">
@@ -23,6 +24,10 @@ defineProps({
     type: String,
     default: "default"
   },
+  rounded: {
+    type: String,
+    default: "rounded-lg"
+  }
 })
 
 const variants = {

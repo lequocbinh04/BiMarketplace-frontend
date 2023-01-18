@@ -7,7 +7,7 @@
 }
 
 .tippy-box[data-theme~='tooltip-theme'] {
-  @apply px-2 py-1 bg-gray-900 text-sm text-gray-200 rounded-md;
+  @apply px-2 py-1 bg-gray-900 dark:bg-gray-200 dark:text-black text-sm text-gray-200 rounded-md;
 }
 
 @layer utilities {
@@ -15,7 +15,7 @@
     @apply hover:bg-gray-800 hover:bg-opacity-5 dark:hover:bg-gray-200 dark:hover:bg-opacity-5;
   }
   .bg-input {
-    @apply bg-black bg-opacity-5 hover:bg-opacity-10 dark:bg-gray-200 dark:bg-opacity-5 dark:hover:bg-opacity-10;
+    @apply bg-black bg-opacity-5 hover:bg-opacity-10 dark:bg-gray-200 dark:bg-opacity-5 dark:hover:bg-opacity-10 text-black dark:text-white;
   }
   .bg-box-transparent {
     @apply bg-black bg-opacity-5 dark:bg-gray-200 dark:bg-opacity-5;

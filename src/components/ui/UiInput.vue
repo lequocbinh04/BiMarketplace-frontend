@@ -6,8 +6,8 @@
         <input v-bind="{
             placeholder,
         }" type="text"
-            class="bg-input rounded-lg bg-transparent py-2 px-4 transition border-0 focus:ring-black focus:ring-2 duration-200"
-            :class="[inputClass, {
+            class="bg-input bg-transparent py-2 px-4 transition border-0 focus:ring-black dark:focus:ring-white focus:ring-2 duration-200"
+            :class="[inputClass, rounded, {
                 'pl-12': $slots.prepend,
             }]" />
 
@@ -24,6 +24,10 @@ defineProps({
     placeholder: {
         type: String,
         default: ""
+    },
+    rounded: {
+        type: String,
+        default: "rounded-lg"
     }
 })
 
