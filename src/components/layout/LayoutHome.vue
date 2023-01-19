@@ -114,7 +114,7 @@
                     <Bars3BottomLeftIcon class="h-6 w-6" aria-hidden="true" />
                 </button>
                 <div
-                    class="flex w-full justify-between items-center max-w-[120rem] mx-auto px-6 sm:px-8 md:px-10 py-10 bg-[rgb(250,250,250)] dark:bg-[rgb(24,24,27)] duration-200">
+                    class="flex w-full justify-between items-center max-w-[90rem] mx-auto px-6 sm:px-8 md:px-10 py-10 bg-[rgb(250,250,250)] dark:bg-[rgb(24,24,27)] duration-200">
                     <div class="flex w-full" action="#" method="GET">
                         <div class="relative w-full md:flex items-center hidden">
                             <ui-input placeholder="Search" class="w-full mr-3" rounded="rounded-[0.8rem]"
@@ -196,7 +196,7 @@
             <main class="flex-1">
                 <div class="py-10">
 
-                    <div class="max-w-[120rem] mx-auto px-6 sm:px-8 md:px-10">
+                    <div class="max-w-[90rem] mx-auto px-6 sm:px-8 md:px-10">
                         <router-view />
                     </div>
                 </div>

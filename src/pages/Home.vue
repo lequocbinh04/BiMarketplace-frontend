@@ -18,13 +18,13 @@
       </div>
       <div class="mt-10 text-black dark:text-white duration-200">
         <div class="flex items-center justify-between">
-          <h1 class="font-semibold text-2xl">Trending</h1>
+          <h1 class="font-semibold text-2xl">Heroes</h1>
           <button class="flex items-center text-sm">
             <div class="mr-1">View all</div>
             <ArrowLongRightIcon class="w-4 h-auto" />
           </button>
         </div>
-        <div class="mt-6 grid lg:grid-cols-2 xl:grid-cols-4 gap-x-4 gap-y-14 pt-10">
+        <div class="mt-6 grid grid-cols-2 xl:grid-cols-4 gap-x-4 gap-y-14 pt-8">
           <CardHero name="Taekwon" image="https://assets.thetanarena.com/skin/avatar/21001.png" :price="0.1" />
           <CardHero name="Phoenix" image="https://assets.thetanarena.com/skin/avatar/13001.png" :price="129.1" />
           <CardHero name="Kong Key" image="https://assets.thetanarena.com/skin/avatar/22000.png" :price="12" />
