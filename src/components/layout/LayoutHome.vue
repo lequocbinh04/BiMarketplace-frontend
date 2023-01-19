@@ -114,7 +114,7 @@
                     <Bars3BottomLeftIcon class="h-6 w-6" aria-hidden="true" />
                 </button>
                 <div
-                    class="flex w-full justify-between items-center max-w-[120rem] mx-auto px-6 sm:px-8 md:px-10 py-10">
+                    class="flex w-full justify-between items-center max-w-[120rem] mx-auto px-6 sm:px-8 md:px-10 py-10 bg-[rgb(250,250,250)] dark:bg-[rgb(24,24,27)] duration-200">
                     <div class="flex w-full" action="#" method="GET">
                         <div class="relative w-full md:flex items-center hidden">
                             <ui-input placeholder="Search" class="w-full mr-3" rounded="rounded-[0.8rem]"
@@ -132,8 +132,7 @@
                     </div>
                     <div class=" ml-4 flex items-center md:ml-6">
                         <ui-button buttonClass="py-4 px-4 w-32" rounded="rounded-[0.8rem]">
-                            <img src="/eth.png" class="h-4 w-auto mr-3" v-if="!isDark" />
-                            <img src="/eth-white.png" class="h-4 w-auto mr-3" v-else />
+                            <ui-token />
                             <div class="font-medium text-sm">
                                 1.000 BT
                             </div>
