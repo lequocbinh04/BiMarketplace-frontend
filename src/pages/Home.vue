@@ -6,13 +6,15 @@
         class="relative  bg-black px-8 py-8 flex items-center justify-between rounded-[1.75rem] text-white dark:bg-gray-200 dark:text-black duration-200">
         <div>
           <div class="font-bold text-3xl">The official marketplace for BiGame</div>
-          <div class="mt-2">You can buy your own hero bellow</div>
+          <div class="mt-3">This is the official marketplace for BiGame. You can buy or sell your own hero bellow.
+            Explore the world of BiGame.
+          </div>
           <ui-button variant="white" class="mt-6 font-semibold" padding="py-3.5 px-6">
             Explore More
           </ui-button>
         </div>
-        <img src="https://assets.thetanarena.com/skin/avatar/21001.png" class="h-36 z-20 opacity-0" />
-        <div class="px-6 absolute right-0 bottom-0 z-50">
+        <img src="https://assets.thetanarena.com/skin/avatar/21001.png" class="h-36 w-48 z-20 opacity-0" />
+        <div class="absolute right-0 bottom-0 z-50">
           <img src="https://assets.thetanarena.com/skin/avatar/21001.png" class="h-[17rem] z-20" />
         </div>
       </div>
