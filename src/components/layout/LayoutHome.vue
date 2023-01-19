@@ -116,7 +116,7 @@
                 <div
                     class="flex w-full justify-between items-center max-w-[120rem] mx-auto px-6 sm:px-8 md:px-10 py-10">
                     <div class="flex w-full" action="#" method="GET">
-                        <div class="relative w-full flex items-center">
+                        <div class="relative w-full md:flex items-center hidden">
                             <ui-input placeholder="Search" class="w-full mr-3" rounded="rounded-[0.8rem]"
                                 inputClass="w-full py-4 px-6">
                                 <template #prepend>
@@ -195,7 +195,7 @@
             </div>
 
             <main class="flex-1">
-                <div class="py-6">
+                <div class="py-10">
 
                     <div class="max-w-[120rem] mx-auto px-6 sm:px-8 md:px-10">
                         <router-view />

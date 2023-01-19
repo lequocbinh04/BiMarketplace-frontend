@@ -1,7 +1,8 @@
 <template>
-  <button class="px-4 py-2 duration-200 flex items-center justify-center" :class="[
+  <button class="duration-200 flex items-center justify-center" :class="[
     buttonClass,
     rounded,
+    padding,
     // @ts-ignore
     variants[btnType][variant]
   ]">
@@ -27,6 +28,10 @@ defineProps({
   rounded: {
     type: String,
     default: "rounded-lg"
+  },
+  padding: {
+    type: String,
+    default: "px-4 py-2"
   }
 })
 
@@ -38,6 +43,7 @@ const variants = {
     default: 'bg-input',
     accent:
       'bg-accent hover:bg-gray-700 dark:bg-gray-100 dark:hover:bg-gray-200 dark:text-black text-white',
+    white: 'bg-white dark:bg-black dark:text-white text-black',
     primary:
       'bg-primary text-white dark:bg-secondary dark:hover:bg-primary hover:bg-secondary',
     danger:
