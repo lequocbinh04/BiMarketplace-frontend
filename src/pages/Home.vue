@@ -10,9 +10,9 @@
           Explore More
         </ui-button>
       </div>
-      <img src="https://assets.thetanarena.com/skin/avatar/21001.png" class="h-40 z-20 opacity-0" />
+      <img src="https://assets.thetanarena.com/skin/avatar/21001.png" class="h-36 z-20 opacity-0" />
       <div class="px-6 absolute right-0 bottom-0 z-50">
-        <img src="https://assets.thetanarena.com/skin/avatar/21001.png" class="h-[16.5rem] z-20" />
+        <img src="https://assets.thetanarena.com/skin/avatar/21001.png" class="h-[17rem] z-20" />
         <!-- <div class="rounded-[calc(1.35rem)] w-full h-[70%] absolute bottom-0 left-0 z-10"
           style="background: linear-gradient(180deg,rgba(194,94,1,0.15) 0%,#c25e01 66.15%);">
         </div> -->
